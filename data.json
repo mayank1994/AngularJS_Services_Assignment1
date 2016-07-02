@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "Name": "Geralt of Rivia",
+     
+      "Game": "The Witcher"
+    },
+
+    {
+      "Name": "Nathan Drake",
+     
+      "Game": "Uncharted"
+    },
+    {
+      "Name": "Kratos",
+     
+      "Game": "God of War"
+    },
+    {
+      "Name": "Scorpion",
+     
+      "Game": "Mortal Kombat X"
+    }
+    
+  
+  ]
+}
