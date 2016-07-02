@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!-- Use $http Service to load from JSON-->
+
+<title>AngularJS_Servies_Assignment1.1</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get("data.json").then(function (response) {
+      $scope.myData = response.data.records;
+  });
+});
+</script>
+
+
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+<ul>
+  <li ng-repeat="x in myData">
+    {{ x.Name + ': ' + x.Game }}
+  </li>
+</ul>
+
+</div>
+
+
+
+</body>
+</html>
+
